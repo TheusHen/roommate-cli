@@ -11,10 +11,10 @@ requires-python = ">=3.8"
 license = {text = "MIT"}
 keywords = ["ai", "chat", "cli", "terminal", "roommate", "chatbot", "assistant"]
 authors = [
-    {name = "I'm Matheus"}
+    {name = "I'm Matheus", email = "theushen@example.com"}
 ]
 maintainers = [
-    {name = "I'm Matheus"}
+    {name = "I'm Matheus", email = "theushen@example.com"}
 ]
 classifiers = [
     "Development Status :: 4 - Beta",

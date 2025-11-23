@@ -10,7 +10,7 @@ setup(
     name="roommate-cli",
     version="1.0.0",
     author="I'm Matheus",
-    author_email="",
+    author_email="theushen@example.com",
     description="Your Personal AI Roommate - A beautiful CLI for chatting with your AI companion",
     long_description=long_description,
     long_description_content_type="text/markdown",
