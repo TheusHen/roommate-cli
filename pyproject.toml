@@ -1,0 +1,72 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "roommate-cli"
+version = "1.0.0"
+description = "Your Personal AI Roommate - A beautiful CLI for chatting with your AI companion"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+keywords = ["ai", "chat", "cli", "terminal", "roommate", "chatbot", "assistant"]
+authors = [
+    {name = "I'm Matheus", email = "theushen@example.com"}
+]
+maintainers = [
+    {name = "I'm Matheus", email = "theushen@example.com"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Communications :: Chat",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+]
+
+dependencies = [
+    "rich>=13.0.0",
+    "requests>=2.31.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/TheusHen/roommate-cli"
+Documentation = "https://github.com/TheusHen/roommate-cli#readme"
+Repository = "https://github.com/TheusHen/roommate-cli"
+"Bug Tracker" = "https://github.com/TheusHen/roommate-cli/issues"
+
+[project.scripts]
+roommate = "main:main"
+
+[tool.setuptools]
+py-modules = ["main"]
+
+[tool.black]
+line-length = 100
+target-version = ["py38", "py39", "py310", "py311", "py312"]
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
